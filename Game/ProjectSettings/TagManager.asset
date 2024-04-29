@@ -15,7 +15,8 @@ TagManager:
   - Skill
   - Enemy
   - LifeBar
-  - Boss
+  - BossTxtUI
+  - pUIText
   layers:
   - Default
   - TransparentFX

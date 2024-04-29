@@ -5,17 +5,29 @@ using UnityEngine.UI;
 
 public class PartyHpUI_1 : MonoBehaviour
 {
-    private float _Php;
+    [SerializeField] private Image _pHp;
+    [SerializeField] private Text _pHpText;
+
+    private float _pCurrentHp;
+    private float _pMaxHp = 100f;
 
     public void PartyHpBar()
     {
-        Image PartyImg = GameObject.FindGameObjectsWithTag("PartyHp")[0].GetComponent<Image>();
+        Image _partyImg = GameObject.FindGameObjectsWithTag("PartyHp")[0].GetComponent<Image>();
 
-        if( PartyImg != null)
+        if(_partyImg != null)
         {
-            _Php = 45.0f;
-            PartyImg.fillAmount = _Php / 100.0f;
+            float fillAmount = 45.0f / 100.0f;
+            _partyImg.fillAmount = fillAmount;
+
+            _pHpText.text = Mathf.RoundToInt(fillAmount * 100.0f) + "%";
         }
     }
 
+    public void UpdateMpUI()
+    {
+        float fillAmount = _pCurrentHp / _pMaxHp;
+        _pHp.fillAmount = fillAmount;
+        _pHpText.text = Mathf.RoundToInt(fillAmount * 100f) + "%";
+    }
 }

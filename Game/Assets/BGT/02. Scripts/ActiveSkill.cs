@@ -17,7 +17,6 @@ public class ActiveSkill : MonoBehaviour
 
     void Start()
     {
-        imgIcon.sprite = Active.skill_Icon;
         Active_Stop = Active_Cool();
         target = GameObject.FindWithTag("Player").GetComponent<TargetManager>();
     }

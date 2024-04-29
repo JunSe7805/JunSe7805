@@ -7,7 +7,8 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance = null; // 싱글톤
     // [플레이어 스테이터스]
-    [SerializeField] private PlayerHpUI  playerHpUI;          // 체력
+    [SerializeField] private PlayerHpUI playerHpUI;          // 체력
+    [SerializeField] private Text HpPercent; // 체력 텍스트
     [SerializeField] public PlayerMpUI  playerMpUI;          // 마나
     [SerializeField] private PlayerSpUI  playerSpUI;          // 스태미너
     [SerializeField] private PlayerExpUI playerExpUI;         // 경험치
@@ -38,6 +39,7 @@ public class UIManager : MonoBehaviour
         }
         #region 플레이어 UI
         playerHpUI = GameObject.Find("Hp").GetComponent<PlayerHpUI>();
+        HpPercent = GameObject.Find("HpPercent").GetComponent<Text>();
         playerMpUI  = GameObject.Find("Mp").GetComponent<PlayerMpUI>();
         playerSpUI  = GameObject.Find("SpImg").GetComponent<PlayerSpUI>();
         playerExpUI = GameObject.Find("Prograss").GetComponent<PlayerExpUI>();
@@ -50,7 +52,7 @@ public class UIManager : MonoBehaviour
         #endregion
 
         #region 보스 UI
-        bossUI = GameObject.Find("BossHp").GetComponent<BossUI>();
+        bossUI = GameObject.Find("BossHpUI").GetComponent<BossUI>();
         #endregion
     }
     // Start is called before the first frame update
@@ -59,8 +61,11 @@ public class UIManager : MonoBehaviour
         #region 플레이어 UI Start
         UIManager.instance.playerHpUI.PlayerHpBar();
         UIManager.instance.playerMpUI.PlayerMpBar();
+
         UIManager.instance.playerSpUI.PlayerSpBar();
+
         UIManager.instance.playerExpUI.PlayerExpBar();
+
         UIManager.instance.playerSkiUI.PlayerSkiUIBar();
         #endregion
 

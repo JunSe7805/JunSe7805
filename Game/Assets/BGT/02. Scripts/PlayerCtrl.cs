@@ -29,7 +29,8 @@ public class PlayerCtrl : MonoBehaviour
     public float diveSpeed;
     public float gravity;
     public float _curHp;
-    public float _maxHp;
+    // 수치 100으로 수정
+    public float _maxHp = 100f;
     public bool togglecameraRotation;
     public bool run;
     public bool diveRoll;
