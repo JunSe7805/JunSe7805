@@ -15,6 +15,7 @@ TagManager:
   - Skill
   - Enemy
   - LifeBar
+  - Boss
   layers:
   - Default
   - TransparentFX

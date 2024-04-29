@@ -14,7 +14,7 @@ public class PassSceneManager : MonoBehaviour
     public static void LoadScene(string sceneName)
     {
         next2Scene = sceneName;
-        SceneManager.LoadScene("Loading 1");
+        SceneManager.LoadScene("MapLoading");
     }
 
     // Start is called before the first frame update
@@ -29,10 +29,10 @@ public class PassSceneManager : MonoBehaviour
         op.allowSceneActivation = false;
 
         float timer = 0f;
-        while (timer < 4f)
+        while (timer < 5f)
         {
             // 현재 로딩 진행 상황을 계산합니다.
-            float progress = Mathf.Clamp01(timer / 4f);
+            float progress = Mathf.Clamp01(timer / 5f);
 
             // 로딩 진행 상황을 표시합니다.
             progressBar.fillAmount = progress;

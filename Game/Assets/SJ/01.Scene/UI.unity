@@ -1224,7 +1224,7 @@ MonoBehaviour:
   playerExpUI: {fileID: 0}
   playerSkiUI: {fileID: 0}
   partyHpUI_1: {fileID: 0}
-  bossUI: {fileID: 0}
+  bossUI: {fileID: 6100732839588384244}
 --- !u!4 &1215129614
 Transform:
   m_ObjectHideFlags: 0
@@ -1279,7 +1279,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 200, y: -200}
-  m_SizeDelta: {x: 400, y: 400}
+  m_SizeDelta: {x: 350, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1466809319
 MonoBehaviour:
@@ -1611,6 +1611,14 @@ PrefabInstance:
       propertyPath: m_Text
       value: R
       objectReference: {fileID: 0}
+    - target: {fileID: 673500043465313836, guid: 04efa4a936f6a1c43a4020b2c712782c, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 673500043465313836, guid: 04efa4a936f6a1c43a4020b2c712782c, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2646418746421068112, guid: 04efa4a936f6a1c43a4020b2c712782c, type: 3}
       propertyPath: m_Name
       value: PlayerSkill
@@ -1698,6 +1706,22 @@ PrefabInstance:
     - target: {fileID: 2646418746421068113, guid: 04efa4a936f6a1c43a4020b2c712782c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2646418746424336634, guid: 04efa4a936f6a1c43a4020b2c712782c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e30998b7eae8385488bafb104cab7295, type: 3}
+    - target: {fileID: 2646418747173078164, guid: 04efa4a936f6a1c43a4020b2c712782c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2646418747173078164, guid: 04efa4a936f6a1c43a4020b2c712782c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2646418747173078164, guid: 04efa4a936f6a1c43a4020b2c712782c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04efa4a936f6a1c43a4020b2c712782c, type: 3}
@@ -2106,6 +2130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 777589613}
     m_Modifications:
+    - target: {fileID: 609477941, guid: c254c0094c301e747aa1ca4317140db3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2515340563705323595, guid: c254c0094c301e747aa1ca4317140db3, type: 3}
       propertyPath: m_SizeDelta.x
       value: -7.3179
@@ -2228,7 +2256,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6100732839581051117, guid: c254c0094c301e747aa1ca4317140db3, type: 3}
       propertyPath: m_Name
-      value: Boss
+      value: BossUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100732839581051117, guid: c254c0094c301e747aa1ca4317140db3, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7212812010850581694, guid: c254c0094c301e747aa1ca4317140db3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2236,6 +2268,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c254c0094c301e747aa1ca4317140db3, type: 3}
+--- !u!114 &6100732839588384244 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 609477941, guid: c254c0094c301e747aa1ca4317140db3, type: 3}
+  m_PrefabInstance: {fileID: 6100732839588384243}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6925758801304de48b2ce5d6e98f1249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7026441841958227433
 PrefabInstance:
   m_ObjectHideFlags: 0

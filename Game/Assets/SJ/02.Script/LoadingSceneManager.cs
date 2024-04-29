@@ -15,7 +15,7 @@ public class LoadingSceneManager : MonoBehaviour
     public static void LoadScene(string sceneName)
     {
         next1Scene = sceneName;
-        SceneManager.LoadScene("Loading");
+        SceneManager.LoadScene("LobbyLoading");
     }
     // Start is called before the first frame update
     void Start()
@@ -29,10 +29,10 @@ public class LoadingSceneManager : MonoBehaviour
         op.allowSceneActivation = false;
 
         float timer = 0f;
-        while (timer < 4f)
+        while (timer < 5f)
         {
             // 현재 로딩 진행 상황을 계산합니다.
-            float progress = Mathf.Clamp01(timer / 4f);
+            float progress = Mathf.Clamp01(timer / 5f);
 
             // 로딩 진행 상황을 표시합니다.
             progressBar.fillAmount = progress;
