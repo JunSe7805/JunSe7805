@@ -49,6 +49,8 @@ public class Enemy : MonoBehaviour
             lifeBar.material.SetFloat("_Progress", _curHp / 100.0f);
             StartCoroutine(Damage());
         }
+
+
     }
     //public void Attack()
     //{
